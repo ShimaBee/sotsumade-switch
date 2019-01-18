@@ -24,3 +24,5 @@ end
 get '/remainding-units.erb' do
   erb :remainding-units
 end
+
+# @exercise = params[:exercise].to_i
