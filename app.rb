@@ -22,7 +22,8 @@ post '/expert' do
   erb :expert
 end
 
-get '/conform.erb' do
+post '/conform' do
+
   erb :conform
 end
 
@@ -33,14 +34,3 @@ end
 get '/remainding-units.erb' do
   erb :remainding-units
 end
-
-# @exercise = params[:exercise].to_i
-#
-# health
-# humanity
-# society
-# nature
-# synthesis
-# ryudai
-# information
-# language1
