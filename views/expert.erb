@@ -1,3 +1,48 @@
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">健康運動</label>
+  <%=@health %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">人文系科目</label>
+  <%=@humanity %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">社会系科目</label>
+  <%=@society %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">自然系科目</label>
+  <%=@nature %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">総合</label>
+  <%=@synthesis %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">琉大特殊科目</label>
+  <%=@ryudai %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">情報系科目</label>
+  <%=@information %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">第１外国語</label>
+  <%=@language1 %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">第２外国語</label>
+  <%=@language2 %>
+</div>
+
 <form action="/conform" method="get">
 
   <div class="form-group">
@@ -37,21 +82,9 @@
     </select>
 
     <input type="submit" class="btn btn-dark" value="次へ">
-
   </div>
 
-  <%=@health %>
-  <%=@humanity %>
-  <%=@society %>
-  <%=@nature %>
-  <%=@synthesis %>
-  <%=@ryudai %>
-  <%=@information %>
-  <%=@language1 %>
-  <%=@language2 %>
-
 </form>
-
 
 <!--<div class="select-wrapper row">-->
 <!--  <label class="col s5">健康運動</label>-->
@@ -61,7 +94,6 @@
 <!--      <option value="<%#= num %>"><%#= num %></option>-->
     <%# end %>
 <!--  </select>-->
-
 
 <!--</div>-->
 <!--health-->

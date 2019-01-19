@@ -28,8 +28,15 @@ h1 {
     font-size: x-large;
     color: yellow;
     margin-top: 50px;
-
 }
+
+.input-units-labels{
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: yellow;
+    font-size: large;
+}
+
 .btn {
     margin-top: 100px;
     font-weight:bold;
