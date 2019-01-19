@@ -5,11 +5,20 @@ get '/' do
   erb :index
 end
 
-get '/common.erb' do
-  erb :common
+get '/general' do
+  erb :general
 end
 
-get '/expert.erb' do
+post '/expert' do
+  @health = params[:health].to_i
+  @humanity = params[:humanity].to_i
+  @society = params[:society].to_i
+  @nature = params[:nature].to_i
+  @synthesis = params[:synthesis].to_i
+  @ryudai = params[:ryudai].to_i
+  @information = params[:information].to_i
+  @language1 = params[:language1].to_i
+  @language2 = params[:language2].to_i
   erb :expert
 end
 
@@ -26,3 +35,12 @@ get '/remainding-units.erb' do
 end
 
 # @exercise = params[:exercise].to_i
+#
+# health
+# humanity
+# society
+# nature
+# synthesis
+# ryudai
+# information
+# language1
