@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sotsumade.iml" filepath="$PROJECT_DIR$/.idea/sotsumade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sotsumade-swich/.idea/sotsumade.iml" filepath="$PROJECT_DIR$/../sotsumade-swich/.idea/sotsumade.iml" />
     </modules>
   </component>
 </project>
