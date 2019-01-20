@@ -3,7 +3,6 @@
     text-align: center;
     background-color: #00DD00;
 }
-
 h1 {
     padding: 20px;
     color: yellow;
@@ -13,7 +12,6 @@ h1 {
     border-radius: 10px; /*角の丸み*/
     display: inline-block;
 }
-
 h2 {
     padding: 20px;
     font-family: 'Kosugi Maru', sans-serif;
@@ -25,11 +23,9 @@ h2 {
     font-family: 'Kosugi Maru', sans-serif;
     text-align: center;
 }
-
 .label-wrapper {
     text-align: center;
 }
-
 .labels {
     display: inline-block;
     font-weight: bold;
@@ -41,19 +37,16 @@ h2 {
 input[ type="number" ] {
     width: 50px;
 }
-
 input[ type="submit" ].expert {
     float: right;
     margin-left: 35px;
 }
-
 .input-units-labels {
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
     color: yellow;
     font-size: large;
 }
-
 .btn {
     margin-top: 30px;
     font-weight: bold;
@@ -61,17 +54,14 @@ input[ type="submit" ].expert {
     background-color: #00DD00;
     border-width: medium;
 }
-
 .button-wrapper {
     text-align: center;
     display: inline-block;
 }
-
 .return-button {
     float: left;
     margin-right: 35px;
 }
-
 .decision-button {
     float: right;
     margin-left: 35px;
