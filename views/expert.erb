@@ -1,87 +1,80 @@
-
-
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">健康運動</label>
-  <%=$health %>
+  <%= $health %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">人文系科目</label>
-  <%=$humanity %>
+  <%= $humanity %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">社会系科目</label>
-  <%=$society %>
+  <%= $society %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">自然系科目</label>
-  <%=$nature %>
+  <%= $nature %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">総合</label>
-  <%=$synthesis %>
+  <%= $synthesis %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">琉大特殊科目</label>
-  <%=$ryudai %>
+  <%= $ryudai %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">情報系科目</label>
-  <%=$information %>
+  <%= $information %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">第１外国語</label>
-  <%=$language1 %>
+  <%= $language1 %>
 </div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">第２外国語</label>
-  <%=$language2 %>
+  <%= $language2 %>
 </div>
 
 <form action="/conform" method="post">
 
   <div class="form-group">
-    <label class="labels" for="exampleFormControlSelect1">学科基礎科目（必修）</label>
-    <select class="form-control" name="compulsory_subjects">
-      <% for num in 0..40 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
 
-    <label class="labels" for="exampleFormControlSelect1">学科基礎科目（選択必修）</label>
-    <select class="form-control" name="compulsory_elective">
-      <% for num in 0..16 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
 
-    <label class="labels" for="exampleFormControlSelect1">学科特殊科目</label>
-    <select class="form-control" name="department_unique">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
+    <div class="form-group">
 
-    <label class="labels" for="exampleFormControlSelect1">学科選択科目</label>
-    <select class="form-control" name="department_elective">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
+      <div class="label-wrapper">
+        <label class="labels" for="exampleFormControlSelect1">学科基礎科目（必修）</label>
+        <input type="number" pattern="\d*" name="compulsory_subjects">
+      </div>
 
-    <label class="labels" for="exampleFormControlSelect1">他学部科目</label>
-    <select class="form-control" name="other_faculty">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
+      <div class="label-wrapper">
+        <label class="labels" for="exampleFormControlSelect1">学科基礎科目（選択必修）</label>
+        <input type="number" pattern="\d*" name="compulsory_elective">
+      </div>
+
+      <div class="label-wrapper">
+        <label class="labels" for="exampleFormControlSelect1">学科特殊科目</label>
+        <input type="number" pattern="\d*" name="department_unique">
+      </div>
+      <div class="label-wrapper">
+        <label class="labels" for="exampleFormControlSelect1">学科選択科目</label>
+        <input type="number" pattern="\d*" name="department_elective">
+      </div>
+      <div class="label-wrapper">
+        <label class="labels" for="exampleFormControlSelect1">他学部科目</label>
+        <input type="number" pattern="\d*" name="other_faculty">
+      </div>
+
+    </div>
+
 
     <input type="submit" class="btn btn-dark" value="次へ">
   </div>

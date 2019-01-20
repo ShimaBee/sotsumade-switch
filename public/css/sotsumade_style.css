@@ -9,24 +9,30 @@ h1 {
     color: yellow;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
-    border: solid 3px black;/*線*/
-    border-radius: 10px;/*角の丸み*/
+    border: solid 3px black; /*線*/
+    border-radius: 10px; /*角の丸み*/
     display: inline-block;
 }
+
 h2 {
     padding: 20px;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
 }
+
 .description {
     color: black;
-    padding:50px 10px 100px 10px;
+    padding: 50px 10px 70px 10px;
     font-family: 'Kosugi Maru', sans-serif;
-    text-align: left;
+    text-align: center;
+}
 
+.label-wrapper {
+    text-align: center;
 }
 
 .labels {
+    display: block;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
     font-size: x-large;
@@ -34,7 +40,7 @@ h2 {
     margin-top: 50px;
 }
 
-.input-units-labels{
+.input-units-labels {
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
     color: yellow;
@@ -42,22 +48,24 @@ h2 {
 }
 
 .btn {
-    margin-top: 100px;
-    font-weight:bold;
+    margin-top: 30px;
+    font-weight: bold;
     color: yellow;
     background-color: mediumspringgreen;
     border-width: medium;
 }
 
-.button-wrapper{
+.button-wrapper {
     text-align: center;
     display: inline-block;
 }
-.return-button{
+
+.return-button {
     float: left;
-    margin-right: 30px;
+    margin-right: 35px;
 }
-.decision-button{
+
+.decision-button {
     float: right;
-    margin-left: 30px;
+    margin-left: 35px;
 }

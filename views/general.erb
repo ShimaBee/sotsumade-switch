@@ -1,69 +1,45 @@
 <form action="/expert" method="post">
 
   <div class="form-group">
-    <label class="labels" for="exampleFormControlSelect1">健康運動系科目</label>
-    <select class="form-control" name="health">
-      <% for num in 0..20 do %>
-      <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
 
-    <label class="labels" for="exampleFormControlSelect1">人文系科目</label>
-    <select class="form-control" name="humanity">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">健康運動系科目</label>
+      <input type="number" pattern="\d*" name="health">
+    </div>
 
-    <label class="labels" for="exampleFormControlSelect1">社会系科目</label>
-    <select class="form-control" name="society">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">人文系科目</label>
+      <input type="number" pattern="\d*" name="humanity">
+    </div>
 
-    <label class="labels" for="exampleFormControlSelect1">自然系科目</label>
-    <select class="form-control" name="nature">
-      <% for num in 0..30 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
-    <label class="labels" for="exampleFormControlSelect1">総合</label>
-    <select class="form-control" name="synthesis">
-      <% for num in 0..20 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
-    <label class="labels" for="exampleFormControlSelect1">琉大特色科目</label>
-    <select class="form-control" name="ryudai">
-      <% for num in 0..20 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
-    <label class="labels" for="exampleFormControlSelect1">情報関係科目</label>
-    <select class="form-control" name="information">
-      <% for num in 0..20 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
-    <label class="labels" for="exampleFormControlSelect1">第１外国語</label>
-    <select class="form-control" name="language1">
-      <% for num in 0..20 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
-    <label class="labels" for="exampleFormControlSelect1">第２外国語</label>
-    <select class="form-control" name="language2">
-      <% for num in 0..20 do %>
-        <option value="<%=num %>"><%=num %> 単位</option>
-      <%end%>
-    </select>
-
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">社会系科目</label>
+      <input type="number" pattern="\d*" name="society">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">自然系科目</label>
+      <input type="number" pattern="\d*" name="nature">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">総合</label>
+      <input type="number" pattern="\d*" name="synthesis">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">琉大特色科目</label>
+      <input type="number" pattern="\d*" name="ryudai">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">情報関係科目</label>
+      <input type="number" pattern="\d*" name="information">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">第１外国語</label>
+      <input type="number" pattern="\d*" name="language1">
+    </div>
+    <div class="label-wrapper">
+      <label class="labels" for="exampleFormControlSelect1">第２外国語</label>
+      <input type="number" pattern="\d*" name="language2">
+    </div>
     <input type="submit" class="btn btn-dark" value="次へ">
 
   </div>
