@@ -4,14 +4,9 @@
     background-color: mediumspringgreen;
 }
 
-h1 {
-    padding: 20px;
-    color: yellow;
-    font-weight: bold;
-    font-family: 'Kosugi Maru', sans-serif;
-    border: solid 3px black; /*線*/
-    border-radius: 10px; /*角の丸み*/
-    display: inline-block;
+.sotsumade-logo{
+    height: 10em;
+    width: 15em;
 }
 
 h2 {

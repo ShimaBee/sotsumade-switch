@@ -32,10 +32,7 @@ post '/conform' do
   erb :conform
 end
 
-get '/graduate.erb' do
-  erb :graduate
-end
+get '/decision' do
 
-get '/remainding-units.erb' do
-  erb :remainding-units
+  erb :graduate
 end
