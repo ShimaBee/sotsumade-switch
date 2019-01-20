@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b0c7b82-db81-4598-b799-acba4bb35135" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/conform.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/conform.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/expert.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/expert.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/graduation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/graduation.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/remaining-units.erb" beforeDir="false" />
-    </list>
+    <list default="true" id="2b0c7b82-db81-4598-b799-acba4bb35135" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +194,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47185000" />
+    <option name="totallyTimeSpent" value="47370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
