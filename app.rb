@@ -33,6 +33,40 @@ post '/conform' do
 end
 
 get '/decision' do
+  $genaral_units = $health + $humanity + $society + $nature + $synthesis + $ryudai + $information + $language1+ $language2
+  $other_general_units = $synthesis + $ryudai + $information + $language2
+  $expert_units = $compulsory_subjects + $compulsory_elective + $department_unique + $department_elective
+  $elective_units = $other_general_units
 
-  erb :graduate
+  # $other_general_units
+  if $humanity > 4
+    $other_general_units + ($humanity - 4)
+  end
+
+  if $humanity > 4
+    $other_general_units + ($society - 4)
+  end
+
+  if $humanity > 4
+    $other_general_units + ($nature - 4)
+  end
+
+  # $elective_units
+  # 教養
+  if $genaral_units > 42
+    $elective_units + 10
+  elsif $genaral_units > 32 && $genaral_units < 42
+    $elective_units + ($genaral_units - 32)
+  else
+    $elective_units
+  end
+
+  # 専門
+  if $expert_units > 54
+    $elective_units + ($expert_units - 54)
+  else
+    $elective_units
+  end
+
+  erb :graduation
 end
