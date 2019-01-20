@@ -1,7 +1,7 @@
 .container {
     padding: 80px 20px 250px 20px;
     text-align: center;
-    background-color: mediumspringgreen;
+    background-color: #00DD00;
 }
 
 h1 {
@@ -51,7 +51,7 @@ h2 {
     margin-top: 30px;
     font-weight: bold;
     color: yellow;
-    background-color: mediumspringgreen;
+    background-color: #00DD00;
     border-width: medium;
 }
 

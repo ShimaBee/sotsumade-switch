@@ -33,26 +33,31 @@ post '/conform' do
 end
 
 get '/decision' do
+
+  # 共通教育
   $genaral_units = $health + $humanity + $society + $nature + $synthesis + $ryudai + $information + $language1+ $language2
+
+  # その他共通教育
   $other_general_units = $synthesis + $ryudai + $information + $language2
+
+  # 専門教育
   $expert_units = $compulsory_subjects + $compulsory_elective + $department_unique + $department_elective
+
+  # 自由科目
   $elective_units = $other_general_units
 
-  # $other_general_units
+  # その他共通教育の計算
   if $humanity > 4
     $other_general_units + ($humanity - 4)
   end
-
   if $humanity > 4
     $other_general_units + ($society - 4)
   end
-
   if $humanity > 4
     $other_general_units + ($nature - 4)
   end
 
-  # $elective_units
-  # 教養
+  # 自由科目の計算（共通）
   if $genaral_units > 42
     $elective_units + 10
   elsif $genaral_units > 32 && $genaral_units < 42
@@ -61,7 +66,7 @@ get '/decision' do
     $elective_units
   end
 
-  # 専門
+  # 自由科目の計算（専門）
   if $expert_units > 54
     $elective_units + ($expert_units - 54)
   else
