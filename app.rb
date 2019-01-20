@@ -23,6 +23,11 @@ post '/expert' do
 end
 
 post '/conform' do
+  $compulsory_subjects = params[:compulsory_subjects].to_i
+  $compulsory_elective = params[:compulsory_elective].to_i
+  $department_unique = params[:department_unique].to_i
+  $department_elective = params[:epartment_elective].to_i
+  $other_faculty = params[:other_faculty].to_i
 
   erb :conform
 end

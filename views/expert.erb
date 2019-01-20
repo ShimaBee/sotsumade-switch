@@ -1,3 +1,5 @@
+
+
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">健康運動</label>
   <%=$health %>
@@ -47,37 +49,37 @@
 
   <div class="form-group">
     <label class="labels" for="exampleFormControlSelect1">学科基礎科目（必修）</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="compulsory_subjects">
       <% for num in 0..40 do %>
-        <option><%=num %> 単位</option>
+        <option value="<%=num %>"><%=num %> 単位</option>
       <%end%>
     </select>
 
     <label class="labels" for="exampleFormControlSelect1">学科基礎科目（選択必修）</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="compulsory_elective">
       <% for num in 0..16 do %>
-        <option><%=num %> 単位</option>
+        <option value="<%=num %>"><%=num %> 単位</option>
       <%end%>
     </select>
 
     <label class="labels" for="exampleFormControlSelect1">学科特殊科目</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="department_unique">
       <% for num in 0..30 do %>
-        <option><%=num %> 単位</option>
+        <option value="<%=num %>"><%=num %> 単位</option>
       <%end%>
     </select>
 
     <label class="labels" for="exampleFormControlSelect1">学科選択科目</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="department_elective">
       <% for num in 0..30 do %>
-        <option><%=num %> 単位</option>
+        <option value="<%=num %>"><%=num %> 単位</option>
       <%end%>
     </select>
 
     <label class="labels" for="exampleFormControlSelect1">他学部科目</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="other_faculty">
       <% for num in 0..30 do %>
-        <option><%=num %> 単位</option>
+        <option value="<%=num %>"><%=num %> 単位</option>
       <%end%>
     </select>
 
@@ -86,22 +88,8 @@
 
 </form>
 
-<!--<div class="select-wrapper row">-->
-<!--  <label class="col s5">健康運動</label>-->
-<!--  <select class="browser-default col s7" name="exercise">-->
-<!--    <option value="" disabled selected>単位数</option>-->
-    <%# (0..10).each do |num| %>
-<!--      <option value="<%#= num %>"><%#= num %></option>-->
-    <%# end %>
-<!--  </select>-->
-
-<!--</div>-->
-<!--health-->
-<!--humanity-->
-<!--society-->
-<!--nature-->
-<!--synthesis-->
-<!--ryudai-->
-<!--information-->
-<!--language1-->
-<!--language2-->
+<!--compulsory_subjects-->
+<!--compulsory_elective-->
+<!--department_unique-->
+<!--department_elective-->
+<!--other_faculty-->
