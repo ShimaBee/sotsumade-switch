@@ -20,16 +20,19 @@
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">第１外国語</label>
-  <%= $language1 %>/10
-</div>
-
-<div>
   <label class="input-units-labels" for="exampleFormControlSelect1">その他教養</label>
   <%= $other_general_units %>/8
 </div>
 
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">英語</label>
+  <%= $English %>/10
+</div>
 
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">共通教育</label>
+  <%= $English %>/10
+</div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">学科基礎（必修)</label>
@@ -42,7 +45,7 @@
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">学科特殊</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">学科特色</label>
   <%= $department_unique %>/16
 </div>
 
@@ -51,13 +54,22 @@
   <%= $department_elective %>/14
 </div>
 
-<div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">他学部</label>
-  <%= $other_faculty %>
-</div>
 
 <div>
   <label class="input-units-labels" for="exampleFormControlSelect1">自由科目</label>
-  <%= $elective_units %>
+  <%= $elective_units %>/38
 </div>
 
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">専門教育</label>
+  <%= $expert_units %>/38
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">総単位</label>
+  <%= $total_units %>/38
+</div>
+
+
+
+<button onclick="location.href='/'" type="button" class="btn btn-dark">再度計算</button>

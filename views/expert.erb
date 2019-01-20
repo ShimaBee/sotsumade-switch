@@ -29,46 +29,54 @@
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">情報</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">情報科学演習</label>
+  <%= $information_science %>
+</div>
+
+<div>
+  <label class="input-units-labels" for="exampleFormControlSelect1">情報関係（他）</label>
   <%= $information %>
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">第１外国語</label>
-  <%= $language1 %>
+  <label class="input-units-labels" for="exampleFormControlSelect1">英語</label>
+  <%= $English %>
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">第２外国語</label>
-  <%= $language2 %>
+  <label class="input-units-labels" for="exampleFormControlSelect1">外国語（その他）</label>
+  <%= $foreign_language %>
 </div>
-
-<button onclick="location.href='/'" type="button" class="btn btn-dark">戻る</button>
 
 <form action="/conform" method="post">
   <div class="form-group form-wrapper">
 
     <div class="label-wrapper">
-      <label class="labels" for="exampleFormControlSelect1">学科基礎（必修）</label>
+      <label class="labels" for="exampleFormControlSelect1">学科基礎（必修）：</label>
       <input type="number" pattern="\d*" name="compulsory_subjects">
     </div>
     <div class="label-wrapper">
-      <label class="labels" for="exampleFormControlSelect1">学科基礎（選択必修）</label>
+      <label class="labels" for="exampleFormControlSelect1">学科基礎（選択必修）：</label>
       <input type="number" pattern="\d*" name="compulsory_elective">
     </div>
     <div class="label-wrapper">
-      <label class="labels" for="exampleFormControlSelect1">学科特殊</label>
+      <label class="labels" for="exampleFormControlSelect1">学科特色：</label>
       <input type="number" pattern="\d*" name="department_unique">
     </div>
     <div class="label-wrapper">
-      <label class="labels" for="exampleFormControlSelect1">学科選択</label>
+      <label class="labels" for="exampleFormControlSelect1">学科選択：</label>
       <input type="number" pattern="\d*" name="department_elective">
     </div>
     <div class="label-wrapper">
-      <label class="labels" for="exampleFormControlSelect1">他学部</label>
+      <label class="labels" for="exampleFormControlSelect1">他学部：</label>
       <input type="number" pattern="\d*" name="other_faculty"></div>
   </div>
-  <input type="submit" class="btn btn-dark" value="次へ">
+
+  <div class="button-wrapper">
+    <button onclick="location.href='/'" type="button" class="btn btn-dark return-button">戻る</button>
+    <input type="submit" class="btn btn-dark expert" value="次へ">
+  </div>
+
 </form>
 
 <!--compulsory_subjects-->

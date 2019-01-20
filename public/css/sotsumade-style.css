@@ -16,7 +16,6 @@ h1 {
 
 h2 {
     padding: 20px;
-    font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
 }
 
@@ -32,12 +31,20 @@ h2 {
 }
 
 .labels {
-    display: block;
+    display: inline-block;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
-    font-size: x-large;
+    font-size: large;
     color: yellow;
     margin-top: 50px;
+}
+input[ type="number" ] {
+    width: 50px;
+}
+
+input[ type="submit" ].expert {
+    float: right;
+    margin-left: 35px;
 }
 
 .input-units-labels {

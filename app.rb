@@ -16,9 +16,10 @@ post '/expert' do
   $nature = params[:nature].to_i
   $synthesis = params[:synthesis].to_i
   $ryudai = params[:ryudai].to_i
+  $information_science = params[:information_science].to_i
   $information = params[:information].to_i
-  $language1 = params[:language1].to_i
-  $language2 = params[:language2].to_i
+  $English = params[:English].to_i
+  $foreign_language = params[:foreign_language].to_i
   erb :expert
 end
 
@@ -35,7 +36,7 @@ end
 get '/decision' do
 
   # 共通教育
-  $genaral_units = $health + $humanity + $society + $nature + $synthesis + $ryudai + $information + $language1+ $language2
+  $genaral_units = $health + $humanity + $society + $nature + $synthesis + $ryudai + $information_science + $information + $English+ $foreign_language
 
   # その他共通教育
   $other_general_units = $synthesis + $ryudai + $information + $language2
@@ -45,6 +46,8 @@ get '/decision' do
 
   # 自由科目
   $elective_units = $other_general_units
+
+  $total_units = $genaral_units + $other_general_units + $expert_units + $elective_units
 
   # その他共通教育の計算
   if $humanity > 4
