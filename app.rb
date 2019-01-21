@@ -63,6 +63,7 @@ get '/decision' do
   if EXPERT_UNITS > 54
     @elective_units += (EXPERT_UNITS - 54)
   end
+  
 
   EXPERT_UNITS = COMPULSORY_SUBJECTS + COMPULSORY_ELECTIVE + DEPARTMENT_UNIQUE + DEPARTMENT_ELECTIVE + @elective_units
 
