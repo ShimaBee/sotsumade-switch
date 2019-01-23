@@ -36,9 +36,8 @@ end
 get '/decision' do
   @other_liberal_arts = SYNTHESIS + RYUDAI + INFORMATION_SCIENCE + INFORMATION
   @elective_units = OTHER_FACULTY
+  @expert_units = COMPULSORY_SUBJECTS + COMPULSORY_ELECTIVE + DEPARTMENT_UNIQUE + DEPARTMENT_ELECTIVE
   GENERAL_UNITS = HEALTH + HUMANITY + SOCIETY + NATURE + SYNTHESIS + RYUDAI + INFORMATION + INFORMATION_SCIENCE + ENGLISH + FOREIGN_LANGUAGE
-  TOTAL_UNITS = GENERAL_UNITS + EXPERT_UNITS + @elective_units
-
 
   if HUMANITY > 4
     @other_liberal_arts += (HUMANITY - 4)
@@ -52,6 +51,7 @@ get '/decision' do
     @other_liberal_arts += (NATURE - 4)
   end
 
+
   if GENERAL_UNITS > 32 && GENERAL_UNITS <= 42
     @elective_units += (GENERAL_UNITS - 32)
   elsif GENERAL_UNITS > 42
@@ -60,13 +60,16 @@ get '/decision' do
     @elective_units
   end
 
-  if EXPERT_UNITS > 54
-    @elective_units += (EXPERT_UNITS - 54)
+  if ENGLISH < 10
+    @elective_units -= (10 - ENGLISH)
   end
-  
 
-  EXPERT_UNITS = COMPULSORY_SUBJECTS + COMPULSORY_ELECTIVE + DEPARTMENT_UNIQUE + DEPARTMENT_ELECTIVE + @elective_units
+  if @expert_units > 54
+    @elective_units += (@expert_units- 54)
+  end
 
+  @total_expert_units = @expert_units + @elective_units
+  @total_units = GENERAL_UNITS + @expert_units + @elective_units
 
   erb :graduation
 end

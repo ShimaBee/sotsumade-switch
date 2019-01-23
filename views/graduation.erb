@@ -1,55 +1,56 @@
+<p>卒業要項</p>
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">健康運動</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">健康運動系科目</label>
   <%= HEALTH %>/2
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">人文</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">人文系科目</label>
   <%= HUMANITY %>/4
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">社会</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">社会系科目</label>
   <%= SOCIETY %>/4
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">自然</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">自然系科目</label>
   <%= NATURE %>/4
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">その他教養</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">その他教養領域及び総合・琉大特色科目</label>
   <%= @other_liberal_arts %>/8
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">英語</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">外国語（英語）</label>
   <%= ENGLISH %>/10
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">共通教育</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">共通教育総計</label>
   <%= GENERAL_UNITS %>/32
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">学科基礎（必修)</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">学科基礎科目（必修)</label>
   <%= COMPULSORY_SUBJECTS %>/20
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">学科基礎（選択必修）</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">学科基礎科目（選択必修）</label>
   <%= COMPULSORY_ELECTIVE %>/4
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">学科特色</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">学科特色科目</label>
   <%= DEPARTMENT_UNIQUE %>/16
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">学科選択</label>
+  <label class="input-units-labels" for="exampleFormControlSelect1">学科選択科目</label>
   <%= DEPARTMENT_ELECTIVE %>/14
 </div>
 
@@ -59,13 +60,13 @@
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">専門教育</label>
-  <%= EXPERT_UNITS %>/92
+  <label class="input-units-labels" for="exampleFormControlSelect1">専門教育総計</label>
+  <%= @total_expert_units %>/92
 </div>
 
 <div>
-  <label class="input-units-labels" for="exampleFormControlSelect1">総単位</label>
-  <%= TOTAL_UNITS %>/124
+  <label class="input-units-labels" for="exampleFormControlSelect1">総単位数</label>
+  <%= @total_units %>/124
 </div>
 
 <button onclick="location.href='/'" type="button" class="btn btn-dark">再度計算</button>
