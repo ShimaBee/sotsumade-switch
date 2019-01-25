@@ -90,14 +90,28 @@ get '/decision' do
   else
     @elective_units
   end
-
-  if @english < 10
-    @elective_units -= (10 - @english)
-  end
+  
 
   if @expert_units > 54
     @elective_units += (@expert_units- 54)
   end
+
+  if @compulsory_subjects > 20
+    @elective_units + (@compulsory_subjects - 20)
+  end
+
+  if @compulsory_elective > 4
+    @elective_units + (@compulsory_elective - 4)
+  end
+
+  if @department_unique > 16
+    @elective_units + (@department_unique - 16)
+  end
+
+  if @department_elective > 14
+    @elective_units + (@department_elective - 14)
+  end
+
 
   @total_expert_units = @expert_units + @elective_units
   @total_units = @general_units + @expert_units + @elective_units
