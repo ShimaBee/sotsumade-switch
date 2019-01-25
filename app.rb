@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+enable :sessions
+
 get '/' do
   erb :index
 end
@@ -10,30 +12,59 @@ get '/general' do
 end
 
 post '/expert' do
-  @health = params[:health].to_i
-  @humanity = params[:humanity].to_i
-  @society = params[:society].to_i
-  @nature = params[:nature].to_i
-  @synthesis = params[:synthesis].to_i
-  @ryudai = params[:ryudai].to_i
-  @information_science = params[:information_science].to_i
-  @information = params[:information].to_i
-  @english = params[:english].to_i
-  @foreign_language = params[:foreign_language].to_i
+
+  session[:health] = params[:health].to_i
+  session[:humanity] = params[:humanity].to_i
+  session[:society] = params[:society].to_i
+  session[:nature] = params[:nature].to_i
+  session[:synthesis] = params[:synthesis].to_i
+  session[:ryudai] = params[:ryudai].to_i
+  session[:information_science] = params[:information_science].to_i
+  session[:information] = params[:information].to_i
+  session[:english] = params[:english].to_i
+  session[:foreign_language] = params[:foreign_language].to_i
   erb :expert
 end
 
 post '/conform' do
-  @compulsory_subjects = params[:compulsory_subjects].to_i
-  @compulsory_elective = params[:compulsory_elective].to_i
-  @department_unique = params[:department_unique].to_i
-  @department_elective = params[:department_elective].to_i
-  @other_faculty = params[:other_faculty].to_i
+
+  session[:health]
+  session[:humanity]
+  session[:society]
+  session[:nature]
+  session[:synthesis]
+  session[:ryudai]
+  session[:information_science]
+  session[:information]
+  session[:english]
+  session[:foreign_language]
+  session[:compulsory_subjects] = params[:compulsory_subjects].to_i
+  session[:compulsory_elective] = params[:compulsory_elective].to_i
+  session[:department_unique] = params[:department_unique].to_i
+  session[:department_elective] = params[:department_elective].to_i
+  session[:other_faculty] = params[:other_faculty].to_i
 
   erb :conform
 end
 
 get '/decision' do
+
+  @health = session[:health]
+  @humanity = session[:humanity]
+  @society = session[:society]
+  @nature = session[:nature]
+  @synthesis = session[:synthesis]
+  @ryudai = session[:ryudai]
+  @information_science = session[:information_science]
+  @information = session[:information]
+  @english = session[:english]
+  @foreign_language = session[:foreign_language]
+  @compulsory_subjects = session[:compulsory_subjects]
+  @compulsory_elective = session[:compulsory_elective]
+  @department_unique = session[:department_unique]
+  @department_elective = session[:department_elective]
+  @other_faculty = session[:other_faculty]
+
   @other_liberal_arts = @synthesis + @ryudai + @information_science + @information
   @elective_units = @other_faculty
   @expert_units = @compulsory_subjects + @compulsory_elective + @department_unique + @department_elective
