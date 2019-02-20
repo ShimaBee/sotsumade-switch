@@ -90,7 +90,7 @@ get '/decision' do
   else
     @elective_units
   end
-  
+
 
   if @expert_units > 54
     @elective_units += (@expert_units- 54)
